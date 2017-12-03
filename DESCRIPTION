@@ -1,0 +1,11 @@
+Package: bbb
+Type: Package
+Title: (Broken) Bollinger Bands ... in the presence of dplyr
+Version: 0.0.1
+Author: Dirk Eddelbuettel
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: Demonstrates how dplyr breaks filter() by hiding the stats::filter function.
+ Also used to test if importFrom(..., except=...) works and it seems it does not.
+Imports: quantmod
+License: GPL (>= 2)
+RoxygenNote: 6.0.1

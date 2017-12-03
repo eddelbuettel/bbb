@@ -1,0 +1,9 @@
+
+importFrom("stats", "filter")  # this protects filter from being harmed by a later load of dplyr
+##import("dplyr", except=c("lag", "filter", "filter_")) # this does NOT work (of course also need DESCRIPTION entry)
+importFrom("utils", "count.fields", "download.file", "read.csv")
+importFrom("graphics", "abline", "axis", "box", "grid", "layout",
+           "lines", "mtext", "par", "plot", "plot.new", "plot.window",
+           "segments", "title")
+importFrom("quantmod", "getSymbols.google")
+export("BollingerBands")
