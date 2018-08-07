@@ -1,9 +1,12 @@
 
 ## this protects filter from being harmed by a later load of dplyr
-importFrom("stats", "filter")
+#importFrom("stats", "filter")
 
 ## this does NOT work (of course also need DESCRIPTION entry)
-#import("dplyr", except=c("lag", "filter", "filter_"))
+import(dplyr, except=c(lag, filter))
+
+## Duncan Murdoch on r-package-devel on 07 Aug 2018 suggesting:
+#importFrom(dplyr, dplyrlag=lag, dplyrfilter=filter)
 
 importFrom("utils", "count.fields", "download.file", "read.csv")
 importFrom("graphics", "abline", "axis", "box", "grid", "layout",

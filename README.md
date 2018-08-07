@@ -13,9 +13,12 @@ This code "just worked" for a dozen years.
 
 ### What does it do?
 
-BollingerBands are, in essence, a moving average with upper and lower bands based on standard
-deviations. Hence moving average calculations are important and implemented here using a standard
-trick with a call to `filter()` (using only one-side).
+[Bollinger Bands](https://en.wikipedia.org/wiki/Bollinger_Bands) are, in essence, a moving
+average with upper and lower bands based on standard deviations. Hence moving average calculations
+are important and implemented here using a standard trick with a call to `filter()` (using only
+one-side); for more see the
+[Wikipedia article on Bollinger Bands](https://en.wikipedia.org/wiki/Bollinger_Bands) and references
+therein.
 
 To see an example, just try it:
 
