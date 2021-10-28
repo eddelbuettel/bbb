@@ -47,7 +47,7 @@ completely different one. Which breaks the code. Ouch.
 Until, or unless, you do what we currently have in `NAMESPACE`:
 
 ```r
-importFrom("stats", "filter")  # this protects filter from being harmed by a later load of dplyr
+importFrom("stats", "filter")  # protect filter from harm via later load of dplyr
 ```
 
 which is functionally equivalent to always explicitly calling `stats::filter` instead.

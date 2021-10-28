@@ -56,7 +56,7 @@ getData.old <- function(instrument = "IBM",
 
 ## replacement
 getData <- function(instrument = "IBM") {
-    z <- quantmod::getSymbols.google(instrument, auto.assign=FALSE, return.class="data.frame")
+    z <- quantmod::getSymbols(instrument, auto.assign=FALSE, return.class="data.frame")
     colnames(z) <- gsub(paste0(instrument, "."), "", colnames(z))
     z[, 1:5]
 }
